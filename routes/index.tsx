@@ -18,7 +18,7 @@ export default function Home() {
               />
             </div>
             <div className="content">
-              <h2 className="text-center text-2xl text-gray-800 font-md">
+              <h2 className="text-center text-2xl text-gray-800 font-medium">
                 Carlos S. Nah
               </h2>
               <small className="block text-center text-sm p-2">
@@ -48,11 +48,27 @@ export default function Home() {
                 </a>
               </div>
             </div>
+
+            <div className="mt-3">
+              <ul>
+                <li>
+                  <a href="/about">About Me</a>
+                </li>
+                <li>
+                  <a href="/blog">Blog</a>
+                </li>
+                <li>
+                  <a href="/contact">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </main>
       <footer class="p-4 md:p-8 flex justify-center">
-        <p className="font-medium text-xl text-gray-900">Made with <span>&hearts;</span> in Monsterrado</p>
+        <p className="font-medium text-xl text-gray-800">
+          Made with <span>&hearts;</span> in Monsterrado
+        </p>
       </footer>
     </>
   );
