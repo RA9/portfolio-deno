@@ -8,7 +8,7 @@ export default function Home() {
         <title>Carlos S. Nah</title>
       </Head>
       <main>
-        <div className="mx-auto max-w-3xl py-8 px-2">
+        <div className="mx-auto max-w-3xl py-24 md:py-28 px-2">
           <div className="rounded-lg bg-gray-200 flex flex-col justify-center items-center">
             <div className="avatar py-4">
               <img
@@ -51,6 +51,9 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <footer class="p-4 md:p-8 flex justify-center">
+        <p className="font-medium text-xl text-gray-900">Made with <span>&hearts;</span> in Monsterrado</p>
+      </footer>
     </>
   );
 }
