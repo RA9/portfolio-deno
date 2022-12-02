@@ -8,7 +8,7 @@ export default function Home() {
         <title>Carlos S. Nah</title>
       </Head>
       <main>
-        <div className="mx-auto max-w-3xl py-24 md:py-28 px-2">
+        <div className="mx-auto max-w-3xl py-24 md:py-20 px-2">
           <div className="rounded-lg bg-gray-200 flex flex-col justify-center items-center">
             <div className="avatar py-4">
               <img
@@ -27,7 +27,7 @@ export default function Home() {
 
               {/* Intro */}
               <p className="p-4">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                .
                 Pariatur enim cumque veniam animi quasi. Error vitae, eum
                 laboriosam maxime vel eos earum aspernatur consequuntur iusto
                 quod ducimus, repellendus illo expedita!
@@ -49,15 +49,15 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-3">
-              <ul>
-                <li>
+            <div className="mt-2">
+              <ul className="flex  justify-center gap-4 p-4">
+                <li className="p-2 bg-gray-200 border-2 border-gray-100 rounded-lg">
                   <a href="/about">About Me</a>
                 </li>
-                <li>
+                <li className="p-2 bg-gray-200 border-2 border-gray-100 rounded-lg">
                   <a href="/blog">Blog</a>
                 </li>
-                <li>
+                <li className="p-2 bg-gray-200 border-2 border-gray-100 rounded-lg">
                   <a href="/contact">Contact</a>
                 </li>
               </ul>
@@ -65,9 +65,9 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer class="p-4 md:p-8 flex justify-center">
+      <footer class="p-2 flex justify-center">
         <p className="font-medium text-xl text-gray-800">
-          Made with <span>&hearts;</span> in Monsterrado
+          Made with <span className="text-[#dc2626] font-medium">&hearts;</span> in Monsterrado
         </p>
       </footer>
     </>
