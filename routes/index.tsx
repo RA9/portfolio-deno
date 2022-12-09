@@ -1,5 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
-import Counter from "../islands/Counter.tsx";
+// import Counter from "../islands/Counter.tsx";
+import Footer from "../components/Footer.tsx";
+
 
 export default function Home() {
   return (
@@ -65,11 +67,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer class="p-2 flex justify-center">
-        <p className="font-medium text-xl text-gray-800">
-          Made with <span className="text-[#dc2626] font-medium">&hearts;</span> in Monsterrado
-        </p>
-      </footer>
+     <Footer />
     </>
   );
 }
