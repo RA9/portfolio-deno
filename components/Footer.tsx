@@ -5,5 +5,6 @@ export default function Footer() {
             <p className="font-medium py-10 text-center text-xl text-gray-800">Made with &hearts; from Montserrado</p>
         </footer>
     </>
+    
   );
 }
