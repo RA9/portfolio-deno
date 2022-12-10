@@ -3,6 +3,7 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { Navbar } from "../../components/Navbar.tsx";
 import { State } from "../../utils/state.ts";
 import { listPosts, Post } from "../../utils/posts.ts";
+import Footer from "../../components/Footer.tsx";
 
 interface Data extends State {
   posts: Post[];
@@ -56,11 +57,7 @@ export default function BlogList(props: PageProps<Data>) {
    </div>
 </div>
       
-       <footer class="p-2 flex justify-center">
-        <p className="font-medium text-xl text-gray-800">
-          Made with <span className="text-[#dc2626] font-medium">&hearts;</span> in Monsterrado
-        </p>
-      </footer>
+      <Footer />
     </>
     )
     }
