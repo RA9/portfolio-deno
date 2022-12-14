@@ -21,12 +21,14 @@ export async function loadPost(slug: string): Promise<Post | null> {
   }
   const { attrs, body } = extract(text);
   const params = attrs as Record<string, string>;
+  console.log({params})
   const publishedAt = new Date(params.published_at);
   return {
     slug,
     title: params.title,
     publishedAt,
     category: params.category,
+    description: params.description,
     content: body,
   };
 }
