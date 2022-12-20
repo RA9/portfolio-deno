@@ -9,9 +9,27 @@ export default function Home(props: PageProps) {
         <>
             <Head>
                 <title>Carlos S. Nah</title>
+                <meta name="title" content={"Carlos S. Nah | CSN"}/>
+                <meta name="description"
+                      content={`“Get programming and tech insights from MrHumble, a computer science expert and teacher from Liberia. Stay up to date with the latest tech news and learn how to write efficient code that solves problems.”`}/>
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website"/>
+
+                <meta property="og:title" content={"Carlos S. Nah | CSN"}/>
+                <meta property="og:description"
+                      content={`“Get programming and tech insights from MrHumble, a computer science expert and teacher from Liberia. Stay up to date with the latest tech news and learn how to write efficient code that solves problems.”`}
+                />
+                {/*<meta property="og:image" content={site.ogImage} />*/}
+
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image"/>
+                <meta property="twitter:title" content={"Carlos S. Nah | CSN"}/>
+                <meta property="twitter:description"
+                      content={`“Get programming and tech insights from MrHumble, a computer science expert and teacher from Liberia. Stay up to date with the latest tech news and learn how to write efficient code that solves problems.”`}/>
+                {/*<meta property="twitter:image" content={site.ogImage} />*/}
             </Head>
             <main className={`mt-4`}>
-                <div className="mx-auto max-w-3xl py-4 md:py-8 px-2">
+                <div className="mx-auto max-w-6xl py-4 md:py-4 px-2">
                     <div className="min-h-fit rounded-lg bg-gray-200 flex flex-col justify-center items-center">
                         <div className="avatar py-4">
                             <img
@@ -30,14 +48,18 @@ export default function Home(props: PageProps) {
 
                             {/* Intro */}
                             <p className="px-8 text-justify whitespace-normal antialiased">
-                                Hey guys! My name is above, but you can call me <b>MrHumble</b>, and I am from a small
-                                town called <b>Picnicess</b>, located in <i>Grand Kru County</i>, Liberia. Funnily
-                                enough, I haven't been there; I look forward to visiting it someday.
+                                My name is above alias MrHumble, and I’m originally from a small town called <b>Picnicess</b>,
+                                located in <em>Grand Kru County</em>, Liberia. Unfortunately, I haven’t had the chance to visit
+                                there yet, but it’s definitely on my list of places to go someday.
                                 <br/><br/>
-                                Daily, I have engaged in teaching programming or computer science concepts, assisting my
-                                team members in writing efficient codes that solve problems or getting abreast with the
-                                latest technologies or news, and most of all; achieving my daily routines without
-                                hiccups.
+                                Daily, I’m passionate about teaching others about programming and computer science. I
+                                love helping my team members write efficient code that solves problems, and I’m always
+                                looking for ways to stay up to date with the latest technologies and news in the field.
+                                <br/><br/>
+                                But it’s not just about work - I’m also focusing on achieving my daily routines and
+                                goals efficiently and effectively. Anything is possible with the right mindset and a
+                                little hard work. Thank you for stopping by my site. I hope you find something here that
+                                interests you and helps you on your journey.
                             </p>
 
                             <div className="social-icons flex gap-3">

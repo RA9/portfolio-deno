@@ -23,6 +23,24 @@ export default function BlogList(props: PageProps<Data>) {
         <>
             <Head>
                 <title>Blog - CSN</title>
+                <meta name="title" content={"Sharing my thoughts through words | CSN"}/>
+                <meta name="description"
+                      content={`“Get programming and tech insights from MrHumble, a computer science expert and teacher from Liberia. Stay up to date with the latest tech news and learn how to write efficient code that solves problems.”`}/>
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website"/>
+
+                <meta property="og:title" content={"Sharing my thoughts through words | CSN"}/>
+                <meta property="og:description"
+                      content={`“Get programming and tech insights from MrHumble, a computer science expert and teacher from Liberia. Stay up to date with the latest tech news and learn how to write efficient code that solves problems.”`}
+                />
+                {/*<meta property="og:image" content={site.ogImage} />*/}
+
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image"/>
+                <meta property="twitter:title" content={"Sharing my thoughts through words | CSN"}/>
+                <meta property="twitter:description"
+                      content={`“Get programming and tech insights from MrHumble, a computer science expert and teacher from Liberia. Stay up to date with the latest tech news and learn how to write efficient code that solves problems.”`}/>
+                {/*<meta property="twitter:image" content={site.ogImage} />*/}
             </Head>
 
             <NavbarIsland isOpen={false} url={props.url} />

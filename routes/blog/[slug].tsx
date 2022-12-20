@@ -23,10 +23,28 @@ export default function Post(props: PageProps<Data>) {
         <>
             <Head>
                 <title>{post.title} - CSN</title>
+                <meta name="title" content={`${post.title} by Carlos S. Nah | CSN`}/>
+                <meta name="description"
+                      content={`${post.description}`}/>
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website"/>
+
+                <meta property="og:title" content={`${post.title} by Carlos S. Nah | CSN`}/>
+                <meta property="og:description"
+                      content={`${post.description}`}
+                />
+                {/*<meta property="og:image" content={site.ogImage} />*/}
+
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image"/>
+                <meta property="twitter:title" content={`${post.title} by Carlos S. Nah | CSN`}/>
+                <meta property="twitter:description"
+                      content={`${post.description}`}/>
+                {/*<meta property="twitter:image" content={site.ogImage} />*/}
                 <style dangerouslySetInnerHTML={{__html: gfm.CSS}}/>
             </Head>
 
-            <div className="w-full px-4 mx-auto max-w-screen-md">
+            <div className="w-full px-1  md:px-4 mx-auto max-w-screen-md">
 
                 <section className="w-full  flex flex-col items-center px-3">
                     <article className="w-full flex flex-col shadow my-4">
