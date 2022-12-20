@@ -58,15 +58,15 @@ export default function Home(props: PageProps) {
 
                         <div className="mt-2">
                             <ul className="flex  justify-center gap-4 p-4">
+                                {/*<li className="p-2 bg-gray-100 border-2 border-gray-100 rounded-lg">*/}
+                                {/*    <a href="/about">About Me</a>*/}
+                                {/*</li>*/}
                                 <li className="p-2 bg-gray-100 border-2 border-gray-100 rounded-lg">
-                                    <a href="/about">About Me</a>
+                                    <a href="/blog">Visit my blog!</a>
                                 </li>
-                                <li className="p-2 bg-gray-100 border-2 border-gray-100 rounded-lg">
-                                    <a href="/blog">Blog</a>
-                                </li>
-                                <li className="p-2 bg-gray-100 border-2 border-gray-100 rounded-lg">
-                                    <a href="/contact">Contact</a>
-                                </li>
+                                {/*<li className="p-2 bg-gray-100 border-2 border-gray-100 rounded-lg">*/}
+                                {/*    <a href="/contact">Contact</a>*/}
+                                {/*</li>*/}
                             </ul>
                         </div>
                     </div>

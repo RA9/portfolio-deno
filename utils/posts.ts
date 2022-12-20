@@ -7,6 +7,7 @@ export interface Post {
   category: string;
   description: string;
   content: string;
+  status: string;
 }
 
 export async function loadPost(slug: string): Promise<Post | null> {
@@ -22,6 +23,9 @@ export async function loadPost(slug: string): Promise<Post | null> {
   const { attrs, body } = extract(text);
   const params = attrs as Record<string, string>;
   const publishedAt = new Date(params.published_at);
+  if (params.status && params.status !== "published") {
+    return null;
+  }
   return {
     slug,
     title: params.title,
@@ -29,6 +33,7 @@ export async function loadPost(slug: string): Promise<Post | null> {
     category: params.category,
     description: params.description,
     content: body,
+    status: params.status
   };
 }
 
@@ -38,7 +43,8 @@ export async function listPosts(): Promise<Post[]> {
     const slug = entry.name.replace(".md", "");
     promises.push(loadPost(slug));
   }
-  const posts = await Promise.all(promises) as Post[];
+  const posts = (await Promise.all(promises) as Post[]).filter(post =>  post != null);
   posts.sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
+
   return posts;
 }

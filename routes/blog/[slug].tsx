@@ -2,6 +2,8 @@ import {Handlers, PageProps} from "$fresh/server.ts";
 import * as gfm from "$gfm";
 import {loadPost} from "../../utils/posts.ts";
 import {Head} from "$fresh/src/runtime/head.ts";
+import Footer from "../../components/Footer.tsx";
+
 
 
 interface Data {
@@ -33,7 +35,7 @@ export default function Post(props: PageProps<Data>) {
                         {/*    <img src="https://source.unsplash.com/collection/1346951/1000x500?sig=1" />*/}
                         {/*</a>*/}
 
-                        <div className={`p-4`}>
+                        <div className={`p-4 bg-gray-50`}>
                             <a href="/blog" className={`flex`}>
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -62,6 +64,8 @@ export default function Post(props: PageProps<Data>) {
                     </article>
                 </section>
             </div>
+
+            <Footer />
         </>
     )
 }

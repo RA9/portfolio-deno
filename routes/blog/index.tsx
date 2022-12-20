@@ -55,8 +55,7 @@ export default function BlogList(props: PageProps<Data>) {
                                             </a>
                                         </div>
                                         <p class="text-gray-700">
-                                            Well, the way they make shows is, they make one show. That show's called a
-                                            pilot. Then they show that show to the people who make shows.
+                                            {post.description}
                                         </p>
                                     </div>
                                 </div>
