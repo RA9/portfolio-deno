@@ -2,7 +2,7 @@
 title: "[Are we there yet?]: Intro"
 category: Series
 description: "In this episode of the “Are we there yet?” series, we explore the idea that life can be more rewarding if we follow the natural order. It may be hard to say when we will arrive at that point of osmosis, but it is essential to maintain hope and stay focused on our goals. Join us as we delve into this thought-provoking topic."
-published_at: 2022-12-20
+published_at: 2022-12-19
 status: published
 ---
 

@@ -4,7 +4,7 @@ category: Personal
 description: "A candid and introspective look back at my personal journey so far in 2022, including the challenges
 faced, relationships lost and gained, and the growth and learning that has taken place. Gratitude to those who have
 supported me throughout the year. Join me as I share my thoughts and feelings about the year so far."
-published_at: 2022-12-20
+published_at: 2022-12-18
 status: published
 ---
 
